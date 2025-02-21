@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwollenHippo - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <form class="card col-12 col-md-5 col-lg-4">
+            <div class="card-body">
+                <h1 class="text-center mb-0 text-primary">SwollenHippo</h1>
+                <div class="d-flex justify-content-center">
+                    <img src="images/abstract.svg" alt="Abstract People Image" style="max-width: 80%;">
+                </div>
+                <h3 class="text-center mb-4">Administrator Login</h3>
+                <input id="txtUsername" class="form-control" type="email" placeholder="johndoe@email.com" aria-label="email">
+                <input id="txtPassword" class="form-control mt-2" type="password" placeholder="password" aria-label="password">
+                <select id="cboLocation" class="form-control mt-4 mb-2" placeholder="Choose Your Location" aria-label="Choose your location">
+                    <option value="">Choose Your Location</option>
+                    <option value="home">Home</option>
+                    <option value="remote">Remote</option>
+                </select>
+                <hr />
+                <button class="btn btn-primary col-12 mt-2" type="button" id="btnLogin">Log In</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+            // Vanilla JS w/ query selector
+
+            // document.querySelector("#btnLogin").addEventListener("click",(e) => {
+            //     //alert("Test")
+            //    console.log( document.querySelector("#txtUsername").value)
+
+                
+            // })
+
+            // // Vanilla JS w/ getElementByID
+            // document.getElementById("#btnLogin").addEventListener("click",(e) => {
+            //     alert("Test")
+                
+            // })
+
+        //jQuery Version
+        $("#btnLogin").on('click',function(){
+            
+                //alert("Test")
+            // var strTest = "This is a test"
+                // Only use var if you want a gloabal variable
+
+                //let strMessage = 1//"Hello World!"
+            // strMessage += ' , Ben'
+                //strMessage = strMessage + "1"//"Hello World"//1
+                //alert(strMessage)
+                // let strTest2 = "This is a test as well"
+
+                // const strTest3 = "THis si a final test"
+            const strUsername = $('#txtUsername').val()
+            const strPassword = $('#txtPassword').val()
+            
+            console.log(strUsername)
+            console.log(strPassword)
+        })
+        </script>
+</body>
+</html>
